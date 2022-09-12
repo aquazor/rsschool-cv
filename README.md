@@ -1,1 +1,1 @@
-https://aquazor.github.io/rsschool-cv/cv
+ttps://aquazor.github.io/rsschool-cv/
