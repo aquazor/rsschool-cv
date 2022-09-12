@@ -1,1 +1,1 @@
-ttps://aquazor.github.io/rsschool-cv/
+https://aquazor.github.io/rsschool-cv/
