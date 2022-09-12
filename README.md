@@ -1,1 +1,1 @@
-https://github.com/aquazor/rsschool-cv/blob/gh-pages/cv.md
+https://aquazor.github.io/rsschool-cv/cv
