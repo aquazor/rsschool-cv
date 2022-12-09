@@ -7,13 +7,13 @@
 .cv-grid {
   position: relative;
   display: grid;
-  grid-template-columns: 250px 450px;
-  grid-template-rows: 230px 700px;
+  grid-template-columns: 230px 570px;
+  grid-template-rows: 230px 600px;
   grid-template-areas:
     'avatar-name avatar-name'
     'profile info';
   margin: 50px auto;
-  width: 702px;
+  width: 802px;
   border: 1px solid gray;
   border-radius: 15px;
 }
@@ -21,7 +21,7 @@
   position: absolute;
   background-color: #6e9b9b;
   left: 30px;
-  width: 200px;
+  width: 250px;
   height: 100%;
   z-index: 0;
 }
@@ -33,7 +33,7 @@
   justify-content: space-between;
 }
 .avatar {
-  padding-left: 40px;
+  padding-left: 65px;
 }
 .avatar,
 .profile,
@@ -56,14 +56,37 @@
 }
 .profile {
   grid-area: profile;
+  line-height: 1.2;
   padding-top: 50px;
   padding-left: 60px;
   color: white;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 .profile h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
+.profile ul,
+.profile h3,
+.exp {
+  padding-bottom: 20px;
+}
+.outline {
+  width: 220px;
+  height: 2px;
+  margin-left: -15px;
+  background-color: white;
+}
+.contacts {
+  padding-top: 40px;
+}
+li a {
+  color: rgb(255, 237, 203);
+  text-decoration: none;
+}
+li a:hover {
+  color: rgb(255, 203, 107);
+}
+
 .info {
   grid-area: info;
 }
