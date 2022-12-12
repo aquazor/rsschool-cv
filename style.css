@@ -10,12 +10,13 @@
   grid-template-columns: 280px 470px;
   grid-template-rows: 220px 670px;
   grid-template-areas:
-    'avatar-name avatar-name'
+    'header header'
     'aside main';
   margin: 20px auto;
   width: 752px;
   border: 1px solid gray;
   border-radius: 15px;
+  box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
 }
 .blue-line {
   position: absolute;
@@ -29,7 +30,7 @@
 /* HEADER */
 
 .avatar-name {
-  grid-area: avatar-name;
+  grid-area: header;
   display: flex;
   margin-top: 40px;
   background-color: rgb(255, 203, 107);
@@ -40,7 +41,8 @@
 }
 .avatar,
 .aside-info,
-.name {
+.name,
+.outline {
   z-index: 2;
 }
 .avatar > img {
@@ -72,16 +74,17 @@
   margin-top: 20px;
   margin-left: 60px;
 }
-.aside-info-headers h3,
-.main-info-headers h3 {
+.aside-info-headers h2,
+.main-info-headers h2 {
   display: inline-block;
+  font-size: 1.2em;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 .aside-info ul,
-.aside-info-headers h3,
+.aside-info-headers h2,
 .exp {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .outline {
   width: 220px;
@@ -93,11 +96,11 @@
 .aside-info ul {
   width: 200px;
 }
-li a {
+a {
   color: rgb(255, 237, 203);
   text-decoration: none;
 }
-li a:hover {
+a:hover {
   color: rgb(255, 203, 107);
 }
 
@@ -118,7 +121,7 @@ li a:hover {
   align-items: center;
   margin-bottom: 10px;
 }
-.main-info-headers h3 {
+.main-info-headers h2 {
   margin-left: 6px;
 }
 .main-info-content ul {
@@ -128,4 +131,21 @@ pre {
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+  margin-top: 40px;
+  font-size: 0.8em;
+}
+.thanks {
+  display: inline-flex;
+  align-items: center;
+}
+footer a {
+  margin-left: 5px;
 }
