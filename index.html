@@ -4,9 +4,128 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My CV</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <div class="cv-grid">
+      <div class="blue-line"></div>
+      <header class="avatar-name">
+        <div class="avatar">
+          <img src="me.jpg" alt="me" />
+        </div>
+        <div class="name">
+          <h1>Aleksandr Kornevskyi</h1>
+          <p><em>Student</em></p>
+        </div>
+      </header>
+      <aside class="aside-info">
+        <div class="aside-info-headers">
+          <h2>Profile</h2>
+        </div>
+        <p>I consider myself a</p>
+        <ul>
+          <li>Purposeful</li>
+          <li>Responsible</li>
+          <li>Sociable</li>
+        </ul>
+        <p class="exp">I am looking forward for my first work experience.</p>
+        <div class="outline"></div>
+        <div class="aside-info-headers">
+          <h2>Contacts</h2>
+        </div>
+        <nav>
+          <ul>
+            <li>Email: kornevskiy99@gmail.com</li>
+            <li><a href="https://github.com/aquazor">GitHub</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/alexkornevskyi/">Linkedin</a>
+            </li>
+            <li>Discord nickname: Aleksandr Kornevskyi (@aquazor)</li>
+            <li>Discord ID: aleXavior#1208</li>
+          </ul>
+        </nav>
+        <div class="outline"></div>
+        <footer>
+          <div class="thanks">
+            <span>Special thanks to </span>
+            <a href="https://rs.school/js/" target="_blank">
+              <img src="/rs_school_js.svg" alt="rs-school-icon" />
+            </a>
+          </div>
+          <span>
+            Made by <a href="https://github.com/aquazor">@aquazor</a> 2022
+          </span>
+        </footer>
+      </aside>
+
+      <main class="main-info">
+        <div class="main-info-content">
+          <div class="main-info-headers">
+            <img src="layers.svg" alt="icon" />
+            <h2>Education</h2>
+          </div>
+          <ul>
+            <li>
+              <strong>College:</strong> Kharkiv Computer and Technology College
+            </li>
+            <li>
+              <strong>Univercity:</strong> National Technical University
+              “Kharkiv Polytechnic Institute” <em>(in progress)</em>
+            </li>
+          </ul>
+        </div>
+        <div class="main-info-content">
+          <div class="main-info-headers">
+            <img src="layers.svg" alt="icon" />
+            <h2>Language</h2>
+          </div>
+          <ul>
+            <li><b>Russian:</b> Fluent</li>
+            <li><b>Ukranian:</b> Fluent</li>
+            <li><b>English:</b> B1 (Intermediate)</li>
+          </ul>
+        </div>
+        <div class="main-info-content">
+          <div class="main-info-headers">
+            <img src="layers.svg" alt="icon" />
+            <h2>Skills</h2>
+          </div>
+          <ul>
+            <li><b>HTML5</b></li>
+            <li><b>CSS3</b></li>
+            <li><b>GitHub</b> (basics)</li>
+          </ul>
+        </div>
+        <div class="main-info-content">
+          <div class="main-info-headers">
+            <img src="layers.svg" alt="icon" />
+            <h2>Code example</h2>
+          </div>
+          <p>
+            <strong>Task:</strong> This code does not execute properly. Try to
+            figure out why.
+          </p>
+          <pre>
+  function multiply(a, b){
+    a * b
+  }</pre
+          >
+          <p><strong>Solution:</strong></p>
+          <pre>
+  function multiply(a, b){
+    return a * b;
+  }</pre
+          >
+        </div>
+      </main>
+    </div>
   </body>
 </html>
