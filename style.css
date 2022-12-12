@@ -11,7 +11,7 @@
   grid-template-rows: 220px 670px;
   grid-template-areas:
     'avatar-name avatar-name'
-    'profile info';
+    'aside main';
   margin: 20px auto;
   width: 752px;
   border: 1px solid gray;
@@ -25,6 +25,9 @@
   height: 100%;
   z-index: 0;
 }
+
+/* HEADER */
+
 .avatar-name {
   grid-area: avatar-name;
   display: flex;
@@ -36,7 +39,7 @@
   padding-left: 65px;
 }
 .avatar,
-.profile,
+.aside-info,
 .name {
   z-index: 2;
 }
@@ -54,37 +57,40 @@
   width: 200px;
   text-transform: uppercase;
 }
-.profile {
-  grid-area: profile;
+
+/* ASIDE */
+
+.aside-info {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
   color: white;
 }
-.profile,
-.info {
+.aside-info,
+.main-info {
   line-height: 1.4;
   margin-top: 20px;
   margin-left: 60px;
 }
-.profile h3,
-.info-headers h3 {
+.aside-info-headers h3,
+.main-info-headers h3 {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.profile ul,
-.profile h3,
+.aside-info ul,
+.aside-info-headers h3,
 .exp {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .outline {
   width: 220px;
   height: 2px;
   margin-left: -15px;
+  margin-bottom: 40px;
   background-color: white;
 }
-.contacts {
-  padding-top: 40px;
-}
-.profile ul {
+.aside-info ul {
   width: 200px;
 }
 li a {
@@ -95,25 +101,27 @@ li a:hover {
   color: rgb(255, 203, 107);
 }
 
-.info {
-  grid-area: info;
+/* MAIN */
+
+.main-info {
+  grid-area: main;
   display: flex;
   flex-direction: column;
   margin-left: 30px;
 }
-.info-content {
+.main-info-content {
   width: 410px;
   margin-bottom: 22px;
 }
-.info-headers {
+.main-info-headers {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-.info-headers-h3 {
+.main-info-headers h3 {
   margin-left: 6px;
 }
-.info-content ul {
+.main-info-content ul {
   margin-left: 20px;
 }
 pre {
