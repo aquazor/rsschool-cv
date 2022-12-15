@@ -4,6 +4,9 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+body {
+  background-color: rgb(255, 249, 231);
+}
 .cv-grid {
   position: relative;
   display: grid;
@@ -16,11 +19,12 @@
   width: 752px;
   border: 1px solid gray;
   border-radius: 15px;
-  box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
+  background-color: white;
+  box-shadow: 10px 10px 30px rgb(0 0 0 / 20%);
 }
 .blue-line {
   position: absolute;
-  background-color: #6e9b9b;
+  background-color: #75a0ad;
   left: 30px;
   width: 250px;
   height: 100%;
@@ -49,7 +53,7 @@
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 3px solid rgb(255, 237, 203);
+  border: 3px solid rgb(255, 249, 231);
 }
 .name {
   align-self: center;
@@ -81,16 +85,17 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.aside-info ul,
-.aside-info-headers h2,
-.exp {
+.aside-info-headers h2 {
   padding-bottom: 20px;
+}
+.projects {
+  margin-top: 20px;
 }
 .outline {
   width: 220px;
   height: 2px;
-  margin-left: -15px;
-  margin-bottom: 40px;
+  margin: 20px -15px;
+
   background-color: white;
 }
 .aside-info ul {
@@ -139,7 +144,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin-left: -10px;
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 0.8em;
 }
 .thanks {
