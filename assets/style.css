@@ -4,6 +4,9 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+body {
+  background-color: rgb(255, 249, 231);
+}
 .cv-grid {
   position: relative;
   display: grid;
@@ -16,11 +19,12 @@
   width: 752px;
   border: 1px solid gray;
   border-radius: 15px;
-  box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
+  background-color: white;
+  box-shadow: 10px 10px 30px rgb(0 0 0 / 20%);
 }
 .blue-line {
   position: absolute;
-  background-color: #6e9b9b;
+  background-color: #75a0ad;
   left: 30px;
   width: 250px;
   height: 100%;
@@ -49,7 +53,7 @@
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 3px solid rgb(255, 237, 203);
+  border: 3px solid rgb(255, 249, 231);
 }
 .name {
   align-self: center;
